@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kebijakan privasi RRI Project Backup.">
+  <title>Kebijakan Privasi — RRI Project Backup</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, Segoe UI, sans-serif; color: #172033; background: #f5f7fb; }
+    body { margin: 0; }
+    main { max-width: 760px; margin: 8vh auto; padding: 2.5rem; background: white; border: 1px solid #e1e6ef; border-radius: 18px; box-shadow: 0 14px 40px #16274a12; }
+    h1 { margin-top: 0; font-size: clamp(2rem, 6vw, 3rem); }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    p, li { line-height: 1.7; }
+    a { color: #125bd2; }
+    .updated { color: #50617b; }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="index.html">RRI Project Backup</a></p>
+    <h1>Kebijakan Privasi</h1>
+    <p class="updated">Terakhir diperbarui: 8 Oktober 2026</p>
+
+    <h2>Data yang diakses</h2>
+    <p>RRI Project Backup berjalan secara lokal di komputer pemiliknya. Berdasarkan folder dan filter yang dipilih, utilitas membaca nama, ukuran, waktu perubahan, dan isi file yang dicadangkan. Utilitas juga menggunakan token OAuth untuk mengakses file Google Drive yang dibuat atau digunakan oleh aplikasi ini.</p>
+
+    <h2>Bagaimana data digunakan dan dikirim</h2>
+    <p>File terpilih dikirim langsung dari komputer ke Google Drive milik pemilik komputer melalui Google Drive API menggunakan rclone. File hanya digunakan untuk membuat dan memperbarui cadangan pada lokasi Drive yang dikonfigurasi. Perubahan versi disimpan dalam folder arsip backup. Penghapusan file lokal tidak memerintahkan aplikasi ini untuk menghapus file Drive.</p>
+    <p>RRI Project Backup tidak mengirim isi file, daftar file, atau token OAuth ke GitHub, situs web ini, atau server yang dikelola pembuatnya. GitHub hanya meng-host halaman informasi ini.</p>
+
+    <h2>Penyimpanan lokal</h2>
+    <p>Token OAuth dan konfigurasi rclone disimpan pada komputer pemiliknya. Log operasional disimpan secara lokal di folder log aplikasi Windows. Siapa pun yang memiliki akses ke komputer atau file konfigurasi tersebut mungkin dapat mengakses informasi itu; pemilik komputer bertanggung jawab menjaga akun Windows dan file konfigurasi tetap aman.</p>
+
+    <h2>Pembagian data</h2>
+    <p>Data backup diproses oleh Google saat disimpan pada Google Drive. RRI Project Backup tidak membagikan data kepada pihak lain dan tidak menyediakan server perantara.</p>
+
+    <h2>Retensi dan kendali pemilik</h2>
+    <p>Salinan dan versi lama di Drive tetap ada sampai pemilik menghapusnya sendiri. Pemilik dapat menghentikan watcher Windows, mengubah folder atau filter backup, menghapus salinan Drive, serta mencabut akses OAuth dari pengaturan keamanan Akun Google.</p>
+
+    <h2>Kontak</h2>
+    <p>Untuk pertanyaan privasi atau permintaan terkait data, gunakan alamat dukungan yang ditampilkan pada layar persetujuan OAuth RRI Project Backup di Google.</p>
+  </main>
+</body>
+</html>
